@@ -1,28 +1,27 @@
 <script>
-	import Header from './Header.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import Hero from '$lib/components/Hero.svelte'
+	import SocialMediaShowcase from '$lib/components/SocialMediaShowcase.svelte'
 	import './layout.css';
 
 	let { children } = $props();
 </script>
 
-<div class="app">
+<div class="site">
+
 	<Header />
 
 	<main>
 		{@render children()}
-		{@render children()}
-		{@render children()}
 	</main>
 
-	<footer>
-		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
-		</p>
+	<footer class="footer">
+		<p>Arcycith</p>
 	</footer>
 </div>
 
 <style>
-	.app {
+	.site {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
@@ -34,11 +33,9 @@
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
-		max-width: 80%;
-		min-height: 110vw;
 		margin: 0 auto;
 		box-sizing: border-box;
-		outline: solid 1px black;
+		background-color: aliceblue;
 	}
 
 	footer {
@@ -47,11 +44,6 @@
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
-	}
-
-	footer a {
-		font-weight:lighter;
-		font-size: 5px;
 	}
 
 	@media (min-width: 480px) {

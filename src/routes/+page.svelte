@@ -1,61 +1,47 @@
 <script>
-	import welcomeFallback from '$lib/images/svelte-welcome.png';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import George from '$lib/images/George.webp';
+	import Header from '$lib/components/Header.svelte';
+	import Hero from '$lib/components/Hero.svelte';
+	import SocialMediaShowcase from '$lib/components/SocialMediaShowcase.svelte';
+	import pfp from '$lib/images/profilePicture.jpg';
 
-	import Counter from './Counter.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Arcycith</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={George} type="image/webp" />
-				<img src={welcomeFallback} alt="Welcome" />
-			</picture>
-		</span>
+<Hero />
+<SocialMediaShowcase />
 
-		to your new<br />SvelteKit app
-	</h1>
+<section id="about_me">
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
 </section>
 
+<section id="goals">
+	<div class="goal_card"></div>
+</section>
+<section id="challenges"></section>
+<section id="achievements"></section>
+
+
+
+
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
+
+	#about_me{
+		display:flex;
 	}
 
-	h1 {
-		width: 100%;
+	#goals{
+		display:flex;
+	}
+	#challenges{
+		display:flex;
+	}
+	#achievements{
+		display:flex;
 	}
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
