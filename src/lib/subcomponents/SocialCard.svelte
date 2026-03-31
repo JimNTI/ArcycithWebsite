@@ -1,6 +1,8 @@
 <script>
+
+    export let link = "";
     export let name = "";
-    export let logo = ""
+    export let logo = "";
     export let followers = 0;
     export let goal = 10000;
 
@@ -12,35 +14,45 @@
 
 </script>
     
-    <div class="card bg-gray-800 flex flex-col gap-2 items-center">
-        <div><img src={logo} alt="name" class="w-10 h-10 object-contain"/>
-            <p class="name">{name}</p>
-            <p class="count">{formatNumber(followers)}</p>
+    <a href={link} target="_blank" class="card flex flex-col items-center p-4 bg-purple-900 rounded-lg hover:scale-110 transition-all">
+
+
+    <div class="flex items-end h-8">
+            <img src={logo} alt="name" class="object-contain h-8 p-1 justify-end"/>
+            </div>
+            <div class="flex justify-between w-full">
+            <div class="text-[10px] font-bold">{formatNumber(followers)}</div>
+            <div class="text-[10px] font-bold"> {formatNumber(goal)}</div>
+            </div>
+
             <div class="bar">
-                <div class="fill" style="width: {progress}%">
+                <div class="fill bg-red-400" style="width: {progress}%">
 
                 </div>
+
             </div>
-            <p class="">{formatNumber(followers)} / {formatNumber(goal)}</p>
-        </div>
-    </div>
+
+
+        </a>
+ 
 
     <style>
-        .name {
-            font-size: 1rem;
-            color: white;
-        }
         .bar {
+            display: flex;
+            align-items: center;
             width: 100%;
-            height: 8px;
+            height: 12px;
             border-radius: 12px;
             overflow: hidden;
+            border-width: 2px;
+            border-color: purple;
+            background: #2b2b2b;
         }
         .fill{
-            background: red;
+            background: linear-gradient(to right, purple, purple);
+            height: 80%;
             border-radius: 12px;
-        }
-        .count {
-            font-size: 1rem;
+            transition: width 0.5s ease;
+            margin: 1px;
         }
     </style>

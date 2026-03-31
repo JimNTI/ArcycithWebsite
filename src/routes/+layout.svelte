@@ -1,7 +1,6 @@
 <script>
-	import Header from '$lib/components/Header.svelte';
-	import Hero from '$lib/components/Hero.svelte'
-	import SocialMediaShowcase from '$lib/components/SocialMediaShowcase.svelte'
+	import Navbar from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte'
 	import './layout.css';
 
 	let { children } = $props();
@@ -9,46 +8,18 @@
 
 <div class="site">
 
-	<Header />
+	<Navbar />
 
 	<main>
 		{@render children()}
 	</main>
 
-	<footer class="footer">
-		<p>Arcycith</p>
-	</footer>
+	<Footer />
 </div>
 
 <style>
-	.site {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
 
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		margin: 0 auto;
-		box-sizing: border-box;
-		background-color: aliceblue;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
+.site{
+	background: linear-gradient(135deg, #0f0f12 0%, #330066 100%);
+}
 </style>
