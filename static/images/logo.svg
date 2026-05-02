@@ -1,17 +1,13 @@
-<nav class="flex justify-between items-center px-1" style="background: rgba(8,8,15,0.85); border-bottom: 0.5px solid rgba(127,119,221,0.2); backdrop-filter: blur(8px);">
-  <a href="/">
-<svg width="60" height="60" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
   .eye1, .eye2 {
     transform-box: fill-box;
     transform-origin: center;
     transition: transform 0.3s ease;
   }
-  svg:hover .eye1{
-    transform: scale(1.5) translateY(-10px) translateX(-10px) ;
-  }
-    svg:hover .eye2{
-    transform: scale(1.6) translateY(10px) translateX(10px) ;
+  svg:hover .eye1,
+  svg:hover .eye2 {
+    transform: scale(2.5);
   }
 </style>
 
@@ -152,139 +148,139 @@
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_29"/>
 </filter>
 <linearGradient id="paint0_linear_1_29" x1="80.8848" y1="79.9707" x2="81.5383" y2="79.9707" gradientUnits="userSpaceOnUse">
-<stop offset="0 "stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint1_linear_1_29" x1="80.9176" y1="79.594" x2="81.5053" y2="79.594" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <radialGradient id="paint2_radial_1_29" cx="0" cy="0" r="1" gradientTransform="matrix(3.92187 0.871657 -1.59841 4.51563 91.6117 75.3998)" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </radialGradient>
 <linearGradient id="paint3_linear_1_29" x1="93.0335" y1="77.2237" x2="92.0581" y2="81.6166" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint4_linear_1_29" x1="87.2421" y1="76.9362" x2="88.4977" y2="80.9024" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint5_linear_1_29" x1="90.7248" y1="76.1595" x2="91.6346" y2="79.9333" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint6_linear_1_29" x1="90.3152" y1="81.5222" x2="87.9743" y2="74.1418" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <radialGradient id="paint7_radial_1_29" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(94.039 92.3059) rotate(180) scale(4.50958 8.59388)">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </radialGradient>
 <linearGradient id="paint8_linear_1_29" x1="92.4451" y1="80.1768" x2="91.3571" y2="75.0686" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint9_linear_1_29" x1="81.2867" y1="75.5394" x2="81.3048" y2="81.5446" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint10_linear_1_29" x1="80.3654" y1="73.5758" x2="81.5508" y2="78.9091" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint11_linear_1_29" x1="81.8955" y1="72.4355" x2="83.1552" y2="73.5153" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint12_linear_1_29" x1="81.65" y1="79.3786" x2="82.8089" y2="67.4674" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint13_linear_1_29" x1="80.292" y1="73.3948" x2="81.6236" y2="72.5141" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint14_linear_1_29" x1="80.5804" y1="73.603" x2="80.8217" y2="71.9126" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint15_linear_1_29" x1="92.3474" y1="74.2999" x2="90.1631" y2="72.454" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint16_linear_1_29" x1="91.8451" y1="73.6046" x2="93.0601" y2="88.5969" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint17_linear_1_29" x1="90.8246" y1="74.4811" x2="89.4301" y2="76.407" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <radialGradient id="paint18_radial_1_29" cx="0" cy="0" r="1" gradientTransform="matrix(7.03217 1.56288 -2.86603 8.14771 81.7005 73.9566)" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </radialGradient>
 <radialGradient id="paint19_radial_1_29" cx="0" cy="0" r="1" gradientTransform="matrix(2.25019 0.489587 -0.916789 2.60776 81.9773 76.5998)" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </radialGradient>
 <radialGradient id="paint20_radial_1_29" cx="0" cy="0" r="1" gradientTransform="matrix(4.46727 0 -0.134376 5.21988 81.7633 77.1293)" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </radialGradient>
 <linearGradient id="paint21_linear_1_29" x1="89.2216" y1="75.8969" x2="90.3975" y2="72.9347" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
 </linearGradient>
 <linearGradient id="paint22_linear_1_29" x1="87.4701" y1="65.2336" x2="83.1293" y2="83.336" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#D1D1D1"/>
+<stop stop-color="#D1D1D1"/>
 <stop offset="0.5"/>
 <stop offset="0.75" stop-color="#545454"/>
 <stop offset="1"/>
@@ -311,8 +307,3 @@
 
 </svg>
 
-
-  </a>
-	<h3 class="font-bold text-sm tracking-widest" style="color: #cecbf6;">ARCYCITH</h3>
-	<ul class="w-[64px]"></ul>
-</nav>
