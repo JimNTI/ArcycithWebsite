@@ -36,7 +36,7 @@
 
 <button
 	on:click={() => dispatch('open')}
-	class="cursor-pointer flex flex-row h-[auto] m-4 p-3 bg-white rounded-sm"
+	class="cursor-pointer flex flex-row h-[auto] m-4 p-3 bg-white rounded-sm  shadow-md shadow-black"
 >
 	<div class="flex flex-col w-full px-3">
 		<div class="flex gap-2">
@@ -47,7 +47,7 @@
 			</div>
 		</div>
 
-		<p class="text-gray-800 mt-1">{text}</p>
+		<p class="text-gray-800 mt-1 text-left">{text}</p>
 
 		<div class="flex gap-4 mt-1">
 			<span>👍{likes}</span>

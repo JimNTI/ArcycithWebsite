@@ -9,17 +9,17 @@
 	const formatNumber = (num) => {
 		return num >= 1000 ? (num / 1000).toFixed(1) + 'K' : num;
 	};
-	const progress = Math.min((followers / goal) * 100, 100);
+	$: progress = Math.min((followers / goal) * 100, 100);
 </script>
 
-<div class="flex flex-col items-center hover:scale-110 transition-all">
+<div class="flex flex-col items-center social-container relative z-1">
 	<a
 		href={link}
 		target="_blank"
 		class="card flex flex-col items-center outline p-4 rounded-lg "
 	>
-		<div class="flex items-end h-10">
-			<img src={logo} alt="name" class="object-contain h-10 p-1 justify-end" />
+		<div class="flex items-end h-10 z-[-1]">
+			<img src={logo} alt="name" class="object-contain h-10 relative p-1 justify-end logo-animation" />
 		</div>
 	</a>
 
@@ -53,5 +53,14 @@
 		border-radius: 12px;
 		transition: width 0.5s ease;
 		margin: 1px;
+	}
+
+	@keyframes logoAnimation{
+    from { opacity: 0; transform: translateY(40px) scale(0.8) rotate(180deg);}
+    to {opacity: 1; transform: translateY(0px) scale(1) rotate(360deg);}
+	}
+
+	.social-container:hover .logo-animation {
+		animation: logoAnimation 0.5s ease
 	}
 </style>

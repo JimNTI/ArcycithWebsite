@@ -1,13 +1,31 @@
 <script>
 	import SocialCard from "../subcomponents/SocialCard.svelte"
-	const socials = [
+	import { onMount } from 'svelte'
+
+	const API_KEY = 'AIzaSyCUhbqBC8aTzQSsBEifGJEB7LGEKE9SxYQ';
+	const CHANNEL_ID = 'UCVNqw3-xrG5BGp3XapvzrtA';
+	let socials = [
 		{ link: "https://instagram.com/arcycith/", name: "Instagram", logo: "images/instagram.png", followers: 74000, goal: 100000 },
-		{ link: "https://youtube.com/@Arcycith", name: "Youtube", logo: "images/youtube.png", followers: 42331, goal: 50000 },
+		{ link: "https://youtube.com/@Arcycith", name: "Youtube", logo: "images/youtube.png", followers: 100, goal: 50000 },
 		{ link: "https://tiktok.com/@Arcycith", name: "TikTok", logo: "images/tiktok.png", followers: 1063, goal: 10000 },
 		{ link: "https://twitch.com/@Arcycith", name: "Twitch", logo: "images/twitch.png", followers: 1063, goal: 10000 },
 		{ link: "https://www.roblox.com/users/493377109/profile", name: "Roblox", logo: "images/roblox.png", followers: 1063, goal: 10000 },
 		{ link: "https://discord.gg/KWY93cA4W6", name: "Discord", logo: "images/discord.png", followers: 1063, goal: 10000 }
-	]
+	];
+
+	 onMount(async () => {
+    const res = await fetch(
+      `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`
+    );
+    const data = await res.json();
+    if (data.items?.[0]) {
+      const subs = parseInt(data.items[0].statistics.subscriberCount);
+      socials = socials.map(s => 
+        s.name === 'Youtube' ? { ...s, followers: subs } : s
+      );
+    }
+  });
+
 </script>
 
 <section class="flex flex-col items-center py-2 px-4">
@@ -22,3 +40,4 @@
 		MORE SOCIALS
 	</button>
 </section>
+
